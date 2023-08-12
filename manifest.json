@@ -1,0 +1,22 @@
+{
+	"name": "Attendance Check",
+	"description": "Extension useful to check attendance in a beautiful way, for students of MANAV RACHNA UNIVERSITY, Faridabad, Haryana",
+	"version": "1.0",
+	"manifest_version": 3,
+	"action": {
+		"default_popup": "popup.html"
+	},
+	"permissions": ["activeTab", "scripting"],
+	"content_scripts": [
+		{
+			"matches": ["https://mrei.icloudems.com/corecampus/student/attendance/*"],
+			"css": ["styles.css"]
+		}
+	],
+	"icons": {
+		"16": "imgs/icon16.png",
+		"32": "imgs/icon32.png",
+		"48": "imgs/icon48.png",
+		"128": "imgs/icon128.png"
+	}
+}

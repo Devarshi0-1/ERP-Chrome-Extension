@@ -1,0 +1,124 @@
+.cardHeader {
+	position: relative;
+}
+
+.showInfoDivBtn {
+	position: absolute;
+	top: 50%;
+	right: 2%;
+	transform: translateY(-50%);
+	border: none;
+	color: white;
+	padding: 10px 12px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	opacity: 1;
+	transition: opacity 250ms ease-out;
+	background-color: rgb(19, 25, 255);
+	cursor: pointer;
+}
+
+.showInfoDivBtn:hover {
+	opacity: 0.7;
+}
+
+.infoDiv.show {
+	display: block;
+}
+
+.infoDiv {
+	display: none;
+	min-width: 300px;
+	position: absolute;
+	top: 85%;
+	right: 8%;
+	padding: 10px 20px;
+	color: white;
+	font-size: 1.5rem;
+	border-radius: 5px;
+	box-shadow: 0 0 5px white;
+	backdrop-filter: blur(2px);
+	background-color: rgba(43, 43, 43, 0.322);
+	user-select: none;
+}
+
+.info-row.top {
+	margin-bottom: 20px;
+}
+
+.info-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 10px;
+}
+
+.cell {
+	border: 2px solid rgba(50, 50, 50, 0.439);
+	margin: 0 1px;
+	padding: 5px 20px;
+}
+
+.info-cell1.cell {
+	border-radius: 5px 0 0 5px;
+	border-right: 1px solid rgba(50, 50, 50, 0.439);
+}
+
+.info-cell2.cell {
+	border-radius: 0 5px 5px 0;
+	border-left: 1px solid rgba(50, 50, 50, 0.439);
+	text-align: center;
+}
+
+.showCalculatorBtn {
+	position: absolute;
+	top: 50%;
+	right: 12%;
+	transform: translateY(-50%);
+	border: none;
+	color: white;
+	padding: 10px 12px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	opacity: 1;
+	transition: opacity 250ms ease-out;
+	background-color: rgb(19, 25, 255);
+	cursor: pointer;
+}
+
+.showCalculatorBtn:hover {
+	opacity: 0.7;
+}
+
+.calculatorDiv.show {
+	display: grid;
+}
+
+.calculatorDiv {
+	width: fit-content;
+	display: none;
+	align-items: center;
+	row-gap: 15px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+
+	position: absolute;
+	top: 85%;
+	right: 16%;
+	padding: 10px 20px;
+	font-size: 1.2rem;
+	color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 5px white;
+	backdrop-filter: blur(2px);
+	background-color: rgba(43, 43, 43, 0.322);
+	user-select: none;
+}
+
+.calculatorDiv input {
+    color: white;
+	padding: 5px 10px;
+	border: 0;
+	border-radius: 5px;
+	background-color: transparent;
+	outline: 1px solid rgba(252, 252, 252, 0.182);
+}
